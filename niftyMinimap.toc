@@ -1,0 +1,5 @@
+## Interface: 30000
+## Title: niftyMinimap
+## Author: Nifty
+## Notes: Minimap addon
+core.lua
