@@ -32,6 +32,21 @@ f:SetScript("OnEvent", function(self)
 			Minimap:SetZoom(level + 1)
 		end
 	end)
+
+	local time = GameTimeFrame
+
+	time.string = time:GetFontString()
+	time.string:SetFont("Interface\\AddOns\\!LynSettings\\fonts\\font.ttf", 16, "OUTLINE")
+	time.string:SetTextColor(1, 1, 1)
+	time.string:SetShadowOffset(1, -1)
+
+	time:SetNormalTexture(nil)
+	time:SetPushedTexture(nil)
+	time:SetHighlightTexture(nil)
+
+	time:ClearAllPoints()
+	time:SetPoint("TOPRIGHT", Minimap, "TOPRIGHT", 5)
+	time:SetFrameStrata("DIALOG")
 	
 	--The black coolish border
 	self:ClearAllPoints()
