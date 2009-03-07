@@ -56,7 +56,6 @@ f:SetScript("OnEvent", function(self)
 		MinimapBorderTop,
 		MiniMapWorldMapButton,
 		MinimapBorder,
-		GameTimeFrame,
 	}
 	for _, frame in ipairs(frames) do 
 		frame:Hide()
