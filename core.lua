@@ -1,6 +1,4 @@
 local f = CreateFrame("Frame", "niftyMinimap", Minimap)
-local border = "Interface\\Addons\\niftyMinimap\\border"
-local border_color = "1, 1, 1"
 
 f:RegisterEvent("PLAYER_LOGIN")
 f:SetScript("OnEvent", function(self) 
