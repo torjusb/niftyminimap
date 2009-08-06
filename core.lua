@@ -10,7 +10,7 @@ f:SetScript("OnEvent", function(self, event)
         f:UnregisterEvent("PLAYER_LOGIN")
         
         --Make it squara[] =]
-        Minimap:SetMaskTexture("Interface\\AddOns\\rMinimap\\mask")
+        Minimap:SetMaskTexture("Interface\\AddOns\\niftyminimap\\mask")
         
         --Damn tracker, so many frames and textures
         MiniMapTracking:ClearAllPoints()
