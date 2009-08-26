@@ -42,7 +42,7 @@ f:SetScript("OnEvent", function(self, event)
 
         time.string = time:GetFontString()
         time.string:SetFont("Interface\\AddOns\\!LynSettings\\fonts\\font.ttf", 16, "OUTLINE")
-        time.string:SetTextColor(1, 1, 1)
+      --  time.string:SetTextColor(1, 1, 1)
         time.string:SetShadowOffset(1, -1)
 
         time:SetNormalTexture(nil)
@@ -81,8 +81,8 @@ f:SetScript("OnEvent", function(self, event)
             frame:Hide()
         end
     end
-     if pendingCalendarInvites > 0 then 
-        time.string:SetTextColor(255, 100, 255)
+    if pendingCalendarInvites > 0 then 
+        time.string:SetTextColor(1, .4, 1)
     else 
         time.string:SetTextColor(1, 1, 1)
     end
