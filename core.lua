@@ -84,8 +84,8 @@ function f:PLAYER_LOGIN ()
 end
 
 function f:PLAYER_ENTERING_WORLD ()
-
-	date = _G["GameTimeFrame"]
+	
+	local date = _G["GameTimeFrame"]
 	date:ClearAllPoints()
 	date:SetPoint("TOPRIGHT", Minimap, "TOPRIGHT", 5)
 	date:SetFrameStrata("DIALOG")
@@ -99,7 +99,9 @@ function f:PLAYER_ENTERING_WORLD ()
 	string:SetFont("Interface\\AddOns\\niftyminimap\\font.ttf", 16, "OUTLINE")
 	string:SetShadowOffset(1, -1)
 
-	checkCalendarInvites()	
+	checkCalendarInvites()
+	
+	self:UnregisterEvent("PLAYER_ENTERING_WORLD")
 end
 
 function f:CALENDAR_UPDATE_PENDING_INVITES ()
